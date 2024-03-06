@@ -1,10 +1,8 @@
-
-
 function App() {
 
   return (
     <div>
-        hi
+      hi
     </div>
   )
 }
