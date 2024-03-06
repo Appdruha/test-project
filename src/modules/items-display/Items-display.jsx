@@ -2,7 +2,6 @@ import { ItemCard } from '../../components/item-card/Item-card.jsx'
 import { Box, Button } from '@mui/material'
 import { useGetIdsMutation } from './api/items-api.js'
 
-
 export const ItemsDisplay = () => {
 
   const [getIds, {}] = useGetIdsMutation()
