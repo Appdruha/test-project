@@ -6,7 +6,7 @@ export const getUniqueIds = async ({ getIds, offset, limit, filterOptions }) => 
       if (filterOptions.price !== 0) {
         ids = await getIds({
           action: 'filter',
-          params: { price: Number(filterOptions.price).toFixed(1) },
+          params: { price: Number(filterOptions.price) },
         }).unwrap()
       } else if (filterOptions.brand) {
         ids = await getIds({
