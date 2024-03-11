@@ -1,9 +1,9 @@
-import { Card, CardContent, CardHeader, CardMedia, Typography } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import imagePlaceholder from '../../assets/images/imagePlaceholder.png'
 
 export const ItemCard = ({product, price, id, brand, img}) => {
   return (
-    <Card sx={{ width: '256px'}}>
+    <Card sx={{ width: '256px', height: '360px'}}>
       <CardContent>
         <Typography variant='h6' sx={{margin: 'auto', width: 'fit-content'}}>
           {product}
@@ -16,16 +16,13 @@ export const ItemCard = ({product, price, id, brand, img}) => {
       />
       <CardContent>
         <Typography variant="body2" component="div">
-          {brand}
+          {'Брэнд: ' + (brand || 'brand')}
         </Typography>
         <Typography variant="body2">
-          {price}
+          {'Цена: ' + price + '$'}
         </Typography>
         <Typography variant="body2">
-          {id}
-        </Typography>
-        <Typography variant="body2">
-          {product}
+          {'id: ' + id}
         </Typography>
       </CardContent>
     </Card>

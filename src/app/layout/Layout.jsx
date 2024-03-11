@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
   return (
     <Box sx={{ maxWidth: '1200px', margin: 'auto' }} bgcolor='#B9C4D0'>
       <Header />
-      <Box component='main' flexGrow={1}>
+      <Box component='main' flexGrow={1} sx={{minHeight: '100vh'}}>
         {children}
       </Box>
       <Footer />

@@ -1,8 +1,9 @@
-import { itemsApi } from '../modules/items-display/index.js'
+import { itemsApi, itemsSlice } from '../modules/items-display/index.js'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 const rootReducer = combineReducers({
   [itemsApi.reducerPath]: itemsApi.reducer,
+  itemsReducer: itemsSlice.reducer
 })
 
 export const store = configureStore({
